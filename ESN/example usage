@@ -1,0 +1,11 @@
+SINGLE RUN:
+-----------------
+- put a suitable config file in configs/esn/..
+- if no genetic opts, don't care about configs/opt/default
+
+./run_single_experiment.sh ../../Dataset/ACEA_p/ configs/opt/default configs/esn/ACEA_ridge_identity 1
+
+
+RANDOPT:
+-----------------
+python randopt.py ../../Dataset/ACEA_p/ ./results/ACEA/ --n_iter 1000 --n_eval 3 --n_threads 4 --batch_size 25
